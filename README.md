@@ -97,12 +97,6 @@ O projeto possui quatro ferramentas matemáticas:
 
 O LangChain utiliza o modelo Claude para decidir qual ferramenta deve ser utilizada para responder à pergunta.
 
-## Observação sobre o código atual
-
-O arquivo `firts-agent.py` contém a estrutura do agente, mas a função `run_agent()` atualmente utiliza a variável `result` sem inicializá-la antes do processamento das mensagens.
-
-Por isso, caso você execute o projeto exatamente como está no repositório, será necessário ajustar essa parte do código para realizar a chamada ao agente antes de percorrer `result["messages"]`.
-
 ## Tecnologias
 
 - Python
