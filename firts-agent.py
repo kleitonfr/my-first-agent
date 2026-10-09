@@ -95,7 +95,9 @@ def run_agent(question: str):
     print(f"\n User: {question}")
     print("-" * 60)
 
-     
+    result = agent.invoke({
+        "messages": [("user", question)]
+    })
 
     print("🔎 Clean Agent Execution Trace")
     print("-" * 60)
